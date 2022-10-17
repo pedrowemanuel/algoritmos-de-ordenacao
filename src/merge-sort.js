@@ -25,7 +25,7 @@ function merge(array, initial, midpoint, final) {
     let leftIndex = 0;
     let rightIndex = 0;
 
-    while((leftIndex <= (midpoint - 1) - initial + 1) && (rightIndex <= final - midpoint + 1)) {
+    while((leftIndex < (midpoint - 1) - initial + 1) && (rightIndex < final - midpoint + 1)) {
         if(left[leftIndex] <= right[rightIndex]) {
             array[originalIndex] = left[leftIndex];
             leftIndex += 1;
@@ -36,15 +36,15 @@ function merge(array, initial, midpoint, final) {
         originalIndex += 1;
     }
 
-    if(leftIndex <= (midpoint - 1) - initial + 1) {
-        for (let j = leftIndex; j <= (midpoint - 1) - initial + 1; j++) {
+    if(leftIndex < (midpoint - 1) - initial + 1) {
+        for (let j = leftIndex; j < (midpoint - 1) - initial + 1; j++) {
             array[originalIndex] = left[j];
             originalIndex += 1;
         }
     }
-
-    if(rightIndex <= final - midpoint + 1) {
-        for (let j = rightIndex; j <= final - midpoint + 1; j++) {
+    
+    if(rightIndex < final - midpoint + 1) {
+        for (let j = rightIndex; j < final - midpoint + 1; j++) {
             array[originalIndex] = right[j];
             originalIndex += 1;
         }

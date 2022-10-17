@@ -1,6 +1,6 @@
 const mergeSort = require('./merge-sort');
 
-const array = [5,3,4,2,1];
+const array = [5,5,6,2,4,7,5,2,1];
 
 mergeSort(array);
 
