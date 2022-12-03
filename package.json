@@ -1,0 +1,22 @@
+{
+  "name": "algoritmos-de-ordenacao",
+  "version": "1.0.0",
+  "description": "Trabalho da disciplina de Análise de Algoritmos",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrowemanuel/algoritmos-de-ordenacao.git"
+  },
+  "author": "Pedro Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrowemanuel/algoritmos-de-ordenacao/issues"
+  },
+  "homepage": "https://github.com/pedrowemanuel/algoritmos-de-ordenacao#readme",
+  "dependencies": {
+    "objects-to-csv": "^1.3.6"
+  }
+}
