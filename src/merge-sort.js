@@ -42,7 +42,7 @@ function merge(array, initial, midpoint, final) {
             originalIndex += 1;
         }
     }
-    
+
     if(rightIndex < final - midpoint + 1) {
         for (let j = rightIndex; j < final - midpoint + 1; j++) {
             array[originalIndex] = right[j];
